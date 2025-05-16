@@ -866,3 +866,44 @@ h4.contact {
 
     transform: scale(1.1); /* Escala la imagen al 110% cuando el cursor está sobre ella */
 }
+
+/*Inicio color de stock disponible */
+.circle {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-left: 5px;
+    vertical-align: middle;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Brillo inicial */
+    animation: glow 1.5s infinite alternate;
+}
+
+.green {
+    background-color: #00ff00; /* Verde brillante */
+}
+
+.red {
+    background-color: #ff0000; /* Rojo brillante */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Brillo inicial */
+    animation: glowRed 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+    }
+}
+
+@keyframes glowRed {
+    from {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+    }
+}
+/*Inicio color de stock disponible */
